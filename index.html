@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./src/img/images.jpg" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar sticky">
+        <ul class="list-container">
+          <li class="list-item">
+            <button class="nav-button">
+              <span class="bar one"></span>
+              <span class="bar two"></span>
+              <span class="bar three"></span>
+            </button>
+          </li>
+          <li class="list-item">
+            <h1 class="home">My Bakery</h1>
+          </li>
+          <li class="list-item">
+            <button class="redirect-btn">Get Quote</button>
+          </li>
+          <li class="list-item">
+            <button><a href="tel:+**********">Call Now</a></button>
+          </li>
+          <li class="list-item">
+            <button class="direction-button">Get Directions</button>
+          </li>
+        </ul>
+
+        <aside class="mob-side-bar">
+          <ul class="mob-list-container">
+            <a href="#updates"><li class="mob-list-item active">Updates</li></a>
+            <a href="#testimonials"
+              ><li class="mob-list-item">Testimonials</li></a
+            >
+            <a href="#gallery"><li class="mob-list-item">Gallery</li></a>
+            <a href="#contact"><li class="mob-list-item">Contact</li></a>
+          </ul>
+        </aside>
+      </nav>
+
+      <section class="mob-main">
+        <header>
+          <h2 class="intro-head">my bakery</h2>
+        </header>
+        <p class="bakery-info">
+          Bakery in ************ <br />
+          Opening at 8:00 AM
+        </p>
+        <button class="redirect-btn contact-section-ref">Get Quote</button>
+
+        <figure class="intro-image">
+          <img src="./src//img//bakery.jpg" />
+        </figure>
+      </section>
+
+      <dialog id="contact-modal">
+        <p>My name is Nickson</p>
+      </dialog>
+
+      <section id="updates">
+        <h3>Updates</h3>
+        <div class="updates-container"></div>
+      </section>
+
+      <section id="testimonials">
+        <h3>Testimonials</h3>
+        <div class="testimonial-container">
+          <div class="card">
+            <figure class="card-logo">
+              <img src="./src/img/images.jpg" alt="logo" />
+            </figure>
+            <div class="card-name">
+              <h4>Ankit Bhardwaj</h4>
+            </div>
+            <div class="card-review">
+              <p>
+                I have tasted their plump cakes and they were so delicious
+                especially egg one's. whoever gonna read this you should
+                definitly go there.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card-logo">
+              <img src="./src/img/images.jpg" alt="logo" />
+            </figure>
+            <div class="card-name">
+              <h4>Mansi suri</h4>
+            </div>
+            <div class="card-review">
+              <p>
+                I am a regular and I buy my kid's birthday from this place. Not
+                to mention their cookies and they have huge variety and i mean a
+                huge.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card-logo">
+              <img src="./src/img/images.jpg" alt="logo" />
+            </figure>
+            <div class="card-name">
+              <h4>Alex masion</h4>
+            </div>
+            <div class="card-review">
+              <p>
+                I am from Goa and I love bakery products and fans are my way to
+                go and this place is definitly a place to visit if you are
+                looking for fans.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="review-writer">Write a Review</button>
+      </section>
+
+      <article class="dialog-container">
+        <dialog class="modal">
+          <div class="background-image-container"></div>
+          <form class="review-form" novalidate="true">
+            <label class="name-label" for="name">Name </label>
+            <input
+              class="input name"
+              aria-labelledby="name input"
+              type="text"
+              required
+            />
+
+            <label class="review-label" for="review-msg">Your Review</label>
+            <textarea
+              class="input review"
+              aria-labelledby="review input"
+              col="1"
+              rows="3"
+              pattern="[a-zA-Z0-9]{10,}"
+              required
+            ></textarea>
+            <div class="btn-container">
+              <button type="submit" class="review-submit">Submit</button>
+              <button type="reset" class="review-close">Close</button>
+            </div>
+          </form>
+        </dialog>
+      </article>
+
+      <section id="gallery">
+        <h3>Gallery</h3>
+        <div class="gallery-container"></div>
+      </section>
+
+      <section id="contact">
+        <h3>Contact Us</h3>
+        <div class="map-container"></div>
+
+        <div class="contact-details">
+          <div class="address-container">
+            <h4>Address</h4>
+            <button class="direction-button">Get Directions</button>
+            <address>
+              <div>****************</div>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                distinctio velit, quam voluptas ullam aliquam! Quas,
+                perferendis? Commodi, rem! Voluptatibus
+              </div>
+            </address>
+          </div>
+          <div class="store-hours-container">
+            <h4>Opening Hours</h4>
+            <table>
+              <tr>
+                <th>Sunday</th>
+                <td>8:00am - 2:00pm</td>
+              </tr>
+              <tr>
+                <th>Monday</th>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+              <tr>
+                <th>Tuesday</th>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+              <tr>
+                <th>Wednesday</th>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+              <tr>
+                <th>Thursday</th>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+              <tr>
+                <th>Friday</th>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+              <tr>
+                <th>Saturday</th>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="desktop-version">
+          <p class="right-reserved"></p>
+          <p>Powered by Nickson</p>
+        </div>
+
+        <nav class="mob-version">
+          <ul class="mob-bottom-nav">
+            <li class="redirect-btn">Quote</li>
+            <li>Call</li>
+            <li class="direction-button">
+              Directions</li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+
+    <article class="dialog-container">
+      <dialog class="contact-modal">
+        <figure>
+          <img src="./src/img/images.jpg" width="70px" height="70px" />
+        </figure>
+        <form class="contact-form" method="dialog">
+          <input
+            type="text"
+            class="contact-name"
+            placeholder="Your name"
+            autocomplete="no"
+            required
+          />
+          <input
+            type="email"
+            class="contact-email"
+            placeholder="Your E-mail"
+            pattern="[a-zA-Z0-9]{3,}@[a-zA-Z0-9]{2,}.[a-zA-Z0-9]{2,}"
+            autocomplete="no"
+            required
+          />
+          <textarea
+            class="contact-msg"
+            placeholder="Message"
+            rows="7"
+            minlength="10"
+            style="resize: none"
+            autocomplete="no"
+            required
+          ></textarea>
+          <button class="submit-contact" type="submit">Submit</button>
+        </form>
+      </dialog>
+    </article>
+    <script src="index.js"></script>
+  </body>
+</html>
